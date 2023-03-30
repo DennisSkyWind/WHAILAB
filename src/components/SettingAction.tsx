@@ -19,7 +19,7 @@ export default function SettingAction(props: {
         <SettingItem icon="i-carbon:api" label="OpenAI API Key">
           <input
             type="password"
-            value=”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“
+            value="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"
             class="max-w-150px ml-1em px-1 text-slate-7 dark:text-slate rounded-sm bg-slate bg-op-15 focus:bg-op-20 focus:ring-0 focus:outline-none"
             onInput={e => {
               props.setSetting({

@@ -24,22 +24,15 @@ export default function SettingAction(props: {
             onInput={e => {
               props.setSetting({
                 ...props.setting(),
-                openaiAPIKey:"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"
+                openaiAPIKey:(e.target as HTMLInputElement).value
               })
             }}
           />
         </SettingItem>
         <SettingItem icon="i-carbon:user-online" label="系统角色指令">
           <input
-            type="text"
-            value={props.setting().systemRule}
-            class="text-ellipsis max-w-150px ml-1em px-1 text-slate-7 dark:text-slate rounded-sm bg-slate bg-op-15 focus:bg-op-20 focus:ring-0 focus:outline-none"
-            onInput={e => {
-              props.setSetting({
-                ...props.setting(),
-                systemRule: (e.target as HTMLInputElement).value
-              })
-            }}
+            type="password"
+            value="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"
           />
         </SettingItem>
         <SettingItem icon="i-carbon:data-enrichment" label="思维发散程度">

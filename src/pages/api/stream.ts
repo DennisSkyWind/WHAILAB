@@ -6,8 +6,8 @@ import {
 } from "eventsource-parser"
 
 const localEnv = import.meta.env.OPENAI_API_KEY
-const vercelEnv = process.env.OPENAI_API_KEY
-
+//const vercelEnv = process.env.OPENAI_API_KEY
+const vercelEnv = process.env.key
 const apiKeys = ((localEnv || vercelEnv)?.split(/\s*\|\s*/) ?? []).filter(
   Boolean
 )
